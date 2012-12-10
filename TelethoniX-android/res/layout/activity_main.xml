@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView android:id="@+id/img_human"
+        android:contentDescription="body with heart beating"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+        android:src="@drawable/a_ithonix_good_ld0001"       
+        />
+<!--     
+    <ImageView android:id="@+id/img_body"
+        android:contentDescription="body with heart beating"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+        android:src="@drawable/ithonix_good"       
+        />
+    
+    <ImageView android:id="@+id/img_heart"
+        android:contentDescription="body with heart beating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"   
+        android:layout_alignBaseline="@id/img_body"     
+        />
+ -->
+</RelativeLayout>
