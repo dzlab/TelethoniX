@@ -1,0 +1,25 @@
+#!/bin/bash
+
+DAEMON=/usr/sbin/python
+ARGS=./cardio.py
+
+case "$1" in
+  start)
+    echo "Starting server"
+    /sbin/start-stop-daemon --start \
+        --user www-data --group www-data \
+        -b --make-pidfile \
+        --chuid www-data \
+        --exec $DAEMON $ARGS
+    ;;
+  stop)
+    echo "Stopping server"
+    /sbin/start-stop-daemon --stop --verbose
+    ;;
+  *)
+    echo "Usage: /etc/init.d/cardio-daemon {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
